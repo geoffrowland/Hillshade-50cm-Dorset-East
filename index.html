@@ -70,11 +70,15 @@
         var east = L.tileLayer('./{z}/{x}/{y}.png', {
 		tms: true,
 		opacity: 1.0,
+		minZoom: 10,
+		maxNativeZoom: 17,
 		attribution: ""
 	});
         var west = L.tileLayer('../Hillshade-50cm-Dorset-East/{z}/{x}/{y}.png', {
 		tms: true,
 		opacity: 1.0,
+	        minZoom: 10,
+		maxNativeZoom: 17,
 		attribution: ""
 	});
 
